@@ -1,0 +1,57 @@
+html {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  background: #151515;
+}
+
+body {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 1.5;
+  display: table;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    width: 80%;
+  }
+}
+
+html::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 1px, transparent 1px);
+  background-size: 2px 2px;
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+header {
+  padding: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  height: 4px;
+  background: #fff;
+  opacity: 25%;
+  border: none;
+}
+
+#banner {
+  border: thin solid #fff;
+  margin-right: 20px;
+  height: auto;
+  width: 35%;
+}
